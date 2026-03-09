@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>FastAPI 웹사이트</title>
+    <style>
+        body { font-family: 'Malgun Gothic', sans-serif; text-align: center; padding: 50px; background-color: #f5f7fa; }
+        .nav-bar { margin-bottom: 30px; padding: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .home-btn { text-decoration: none; font-size: 18px; font-weight: bold; color: #2c3e50; }
+        .home-btn:hover { color: #3498db; }
+        .content { background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: inline-block; min-width: 400px; }
+        .btn { display: block; width: 300px; padding: 15px; margin: 10px auto; font-size: 16px; font-weight: bold; color: white; text-decoration: none; border-radius: 8px; background-color: #3498db; }
+        .btn:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="/" class="home-btn">🏠 홈으로 돌아가기</a>
+    </div>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

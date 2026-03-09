@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>📊 서버 상태</h1>
+    <p>현재 서버가 정상적으로 작동 중입니다.</p>
+    
+    <div style="text-align: left; background: #f8f9fa; padding: 15px; border-radius: 5px;">
+        <p><strong>상태:</strong> {{ status }}</p>
+        <p><strong>현재 시간:</strong> {{ timestamp }}</p>
+    </div>
+{% endblock %}
